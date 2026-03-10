@@ -1,0 +1,5 @@
+const { name, email, password } = req.body
+
+console.log(req.body)
+
+const hashedPassword = await bcrypt.hash(password, 10)
